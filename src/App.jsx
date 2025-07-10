@@ -1,9 +1,12 @@
 import "./App.css";
+import ScrollFadeScaleBox from "./components/animations/ScrollFadeScaleBox";
+import ViewportAnimatedTitle from "./components/animations/ViewportAnimatedTitle";
 
 function App() {
   return (
     <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+      <ScrollFadeScaleBox />
+      <ViewportAnimatedTitle />
     </>
   );
 }
