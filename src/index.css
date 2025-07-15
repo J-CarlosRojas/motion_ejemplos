@@ -1,1 +1,24 @@
-@import "tailwindcss";
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* 👈 Desactiva scroll nativo para que Lenis lo tome */
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.lenis {
+  height: auto;
+}
+
+.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis-scrolling iframe {
+  pointer-events: none;
+}

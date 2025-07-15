@@ -1,4 +1,6 @@
 import "./App.css";
+
+// Importamos los componentes de animaciones
 import ScrollFadeScaleBox from "./components/animations/ScrollFadeScaleBox";
 import ViewportAnimatedTitle from "./components/animations/ViewportAnimatedTitle";
 import StyckyAnimatedTitle from "./components/animations/StickyAnimatedTitle";
@@ -9,7 +11,13 @@ import LerpFollower from "./components/animations/LerpFollower";
 import ShaderPlane from "./components/animations/ShaderPlane";
 import { Canvas } from "@react-three/fiber"; // 👈 Importa Canvas
 
+// Importamos hooks
+import useLenis from "./hooks/useLenis";
+
 function App() {
+  // Lenis
+  useLenis();
+
   return (
     <>
       <ScrollFadeScaleBox />
